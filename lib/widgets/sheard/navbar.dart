@@ -15,13 +15,10 @@ class NavbarWidget extends StatefulWidget {
 }
 
 class _NavbarWidgetState extends State<NavbarWidget> {
-  String _selectedRoute = "/home";
+  String _selectedPath = "/signup";
 
-  void _onSelectRoute(String route) {
-    setState(() {
-      _selectedRoute = route;
-      widget.navigatorKey.currentState.pushNamed(route);
-    });
+  void _onSelectRoute(String path) {
+    setState(() => _selectedPath = path);
   }
 
   Widget _generateButton(RouteModel route) {
@@ -29,7 +26,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
       onTap: () => _onSelectRoute(route.path),
       icon: route.icon,
       title: route.name,
-      isSelected: _selectedRoute == route.path,
+      isSelected: _selectedPath == route.path,
     );
   }
 
