@@ -6,7 +6,7 @@ class ThemeColors {
   static const PRIMATY_COLOR = const Color(0xFF3C658E);
   static const ACCENT_COLOR = const Color(0xFF3EA1DA);
 
-  static const TEXT_COLOR = const Color(0xFFFFFFFF);
+  static const TEXT_COLOR = const Color(0xFF000000);
   static const ERROR_COLOR = const Color(0xFFE53935);
   static const SUCCESS_COLOR = const Color(0xFF7CB342);
   static const BACKGROUND_COLOR = const Color(0xFFF9F9F9);

@@ -8,9 +8,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_localizations:
+    sdk: flutter
+    
   cupertino_icons: ^0.1.2
   google_fonts: ^0.3.2
+  page_transition: ^1.1.5
 
 dev_dependencies:
   flutter_test:
