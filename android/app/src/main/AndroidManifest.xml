@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="tzurba_roeah_ruchani_app"
+        android:label="רועה רוחני"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
