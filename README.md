@@ -1,6 +1,6 @@
 # Tzurba Roeah Ruchani App
 
-An app for Tzurba Merabanan
+An app for Tzurba M'rabanan
 
 This project is connected to these repositories:
  - 
