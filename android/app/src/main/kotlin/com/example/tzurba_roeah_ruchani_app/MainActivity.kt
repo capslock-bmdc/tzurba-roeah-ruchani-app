@@ -1,4 +1,4 @@
-package com.example.tzurba_roeah_ruchani_app
+package com.zektec.tzurba_roeah_ruchani_app
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
