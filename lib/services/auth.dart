@@ -22,11 +22,12 @@ class AuthService {
         _firebaseUser = user;
         return user.uid;
       }
-    } catch (e) {
+    } catch (err) {
+      print(err);
       try {
         _auth.signOut();
-      } catch (e) {
-        print(e);
+      } catch (err) {
+        print(err);
       }
       return null;
     }
@@ -48,10 +49,15 @@ class AuthService {
   }
 
   Future<bool> signOut() async {
-    await FirebaseAuth.instance.signOut();
-    await _googleSignIn.signOut();
-    _firebaseUser = null;
-    return true;
+    try {
+      await FirebaseAuth.instance.signOut();
+      await _googleSignIn.signOut();
+      _firebaseUser = null;
+      return true;
+    } catch (err) {
+      print(err);
+      return false;
+    }
   }
 
   Future<FirebaseUser> refreshUser() async {
