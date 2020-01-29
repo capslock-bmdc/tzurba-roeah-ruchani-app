@@ -8,11 +8,11 @@ import 'package:tzurba_roeah_ruchani_app/widgets/core/textField.dart';
 
 class SignupScreen extends StatelessWidget {
   void _onPressSignUp(BuildContext context) {
-    Navigator.pushReplacementNamed(context, '/app');
+    Navigator.pushNamed(context, '/home');
   }
 
   void _onPressSignIn(BuildContext context) {
-    Navigator.pushReplacementNamed(context, '/signin');
+    Navigator.pushNamed(context, '/signin');
   }
 
   Widget _logo() {
