@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:tzurba_roeah_ruchani_app/consts/routes.dart';
 import 'package:tzurba_roeah_ruchani_app/models/route.dart';
-import 'package:tzurba_roeah_ruchani_app/widgets/core/clippedView.dart';
 import 'package:tzurba_roeah_ruchani_app/widgets/sheard/navbarItem.dart';
 
 class NavbarWidget extends StatefulWidget {
-  NavbarWidget({this.navigatorKey});
+  NavbarWidget({
+    this.navigatorKey,
+  });
 
   final GlobalKey<NavigatorState> navigatorKey;
 
@@ -15,7 +16,7 @@ class NavbarWidget extends StatefulWidget {
 }
 
 class _NavbarWidgetState extends State<NavbarWidget> {
-  String _selectedPath = "/signup";
+  String _selectedPath = "/home";
 
   void _onSelectRoute(String path) {
     setState(() => _selectedPath = path);
@@ -53,13 +54,10 @@ class _NavbarWidgetState extends State<NavbarWidget> {
           )
         ],
       ),
-      alignment: Alignment.center,
-      child: ClippedViewWidget(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.max,
-          children: _generateChildren(),
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisSize: MainAxisSize.max,
+        children: _generateChildren(),
       ),
     );
   }
